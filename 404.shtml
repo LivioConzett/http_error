@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8"/>
+        <title>Space shooter</title>
+        <meta name="description" content="404">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="404assets/canvas.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+    </header>
+    <body class="body">
+
+        <div style="display:none">
+            <img class="spaceShip" src="404assets/img/space_ship_sheet.png">
+            <img class="shotEffect" src="404assets/img/shot_effect.png">
+            <img class="fire" src="404assets/img/fire_start_1.png">
+            <img class="explosion" src="404assets/img/explosion.png">
+            <img class="stars" src="404assets/img/stars.png">
+            <img class="badGuy" src="404assets/img/badguy.png">
+            <img class="ammoUp" src="404assets/img/ammoUp.png">
+            <img class="healthUp" src="404assets/img/healthUp.png">
+            <img class="fireRateUp" src="404assets/img/fireRateUp.png">
+            <img class="pickUpEffect" src="404assets/img/pickUpEffect.png">
+        </div>
+
+        <div class="backgroundHolder">
+            <div class="side"></div>
+            <canvas class="background"></canvas>
+            <div class="side">
+                <div class="infoClusterHolder">
+                    <div class="healthBar">
+                        <div class="health"></div>
+                    </div>
+                    <div class="healthBarOverLay"></div>
+                    <div class="numberHolder">
+                        <div class="line1U numberUnderlay">~~~~~~~~~~</div>
+                        <div class="line1 number">HP!!!!!100</div>
+                        <div class="line2U numberUnderlay">~~~~~~~~~~</div>
+                        <div class="line2 number">Ammo!200</div>
+                        <div class="line3U numberUnderlay">~~~~~~~~~~</div>
+                        <div class="line3 number">enmy!!!!!0</div>
+                        <div class="line4U numberUnderlay">~~~~~~~~~~</div>
+                        <div class="line4 number"></div>
+                        <div class="line5U numberUnderlay">~~~~~~~~~~</div>
+                        <div class="line5 number"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <canvas class="gameCanvas"></canvas>
+        
+        <div class="msgHolder">
+            <div class="winMsg"></div>
+            <div class="endMsg">Ok, I think that's enough.<br>Get the URL right next time!</div>
+        </div>
+        <div class="fpsLable"></div>
+
+        <!-- <script src="node_modules/howler/dist/howler.js"></script> -->
+        <script src="404assets/howler.js"></script>
+
+        <script src="404assets/boss.js"></script>
+        <script src="404assets/messages.js"></script>
+        <script src="404assets/canvas.js"></script>
+    </body>
+</html>

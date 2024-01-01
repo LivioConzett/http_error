@@ -1,0 +1,213 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    /*font-weight: bold;*/
+    user-select: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+@font-face{
+    font-family: 'SevenSeg';
+    src: url('img/DSEG14Classic-Bold.ttf');
+}
+
+body{
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1f21;
+    overflow: hidden;
+}
+
+.gameCanvas{
+    position:absolute;
+    top:0;
+    /* border: 2px solid white; */
+}
+
+.msgHolder{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+.fpsLable{
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 50px;
+    color: white;
+}
+
+.endMsg{
+    display: none;
+    font-size: 50px;
+    color: #c5c8c6;
+}
+
+.winMsg{
+    color: #de935f;
+    font-family: 'SevenSeg';
+    font-size: 100px;
+    text-align: center;
+}
+
+.backgroundHolder{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform ease-in 1s;
+    visibility: hidden;
+}   
+
+.background{
+    /* position:absolute; */
+    top:0;
+}
+
+.side{
+    height: 100%;
+    background-color: #707880;
+    flex:1;
+}
+
+.infoClusterHolder{
+    position: relative;
+    height: 600px;
+    width: 470px;
+    border-radius: 10px;
+    border: solid #373b41 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.healthBarOverLay{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 200px;
+    background-image: url('img/health_bar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.healthBar{
+    position: absolute;
+    top:10px;
+    left:61px;
+    width:232px;
+    height: 150px;
+}
+
+.health{
+    background-color: #8c9440;
+    height: 100%;
+    width: 100%;
+}
+
+.numberHolder{
+    position: relative;
+    top: 180px;
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+    background-color: #de935f;
+    border: solid #373b41 10px;
+
+}
+
+.numberUnderlay{
+    font-family: 'SevenSeg';
+    color: #1d1f21;
+    opacity: .2;
+    text-align: right;
+    font-size: 50px;
+}
+
+.number{
+    font-family: 'SevenSeg';
+    color: #1d1f21;
+    text-align: right;
+    font-size: 50px;;
+}
+
+.line1{
+    position: absolute;
+    width: 100%;
+}
+
+.line1U{
+    position: absolute;
+    width: 100%;
+}
+
+.line2{
+    position:absolute;
+    width: 100%;
+    top: 60px;
+}
+
+.line2U{
+    position:absolute;
+    width: 100%;
+    top: 60px;
+}
+
+.line3{
+    position:absolute;
+    width: 100%;
+    top: 120px;
+}
+
+.line3U{
+    position:absolute;
+    width: 100%;
+    top: 120px;
+}
+
+.line4{
+    position:absolute;
+    width: 100%;
+    top: 180px;
+}
+
+.line4U{
+    position:absolute;
+    width: 100%;
+    top: 180px;
+}
+
+.line5{
+    position:absolute;
+    width: 100%;
+    top: 240px;
+}
+
+.line5U{
+    position:absolute;
+    width: 100%;
+    top: 240px;
+}
+
+

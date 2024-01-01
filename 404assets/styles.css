@@ -1,0 +1,79 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    /*font-weight: bold;*/
+    /*user-select: none; */
+}
+
+*:focus {
+    outline: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    background-color: #1d1f21;
+
+}
+
+.field{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.spaceShip{
+    position: absolute;
+    background-image: url('/img/space_ship_sheet.png');  
+}
+
+.fireStart{
+    position:absolute;
+    background-image: url('/img/fire_start_1.png');
+}
+
+.blowUp{
+    position: absolute;
+    background-image: url('/img/blow_up.png');
+}
+
+.blowLeft{
+    position: absolute;
+    background-image: url('/img/blow_left.png');
+}
+
+.blowRight{
+    position: absolute;
+    background-image: url('/img/blow_left.png');
+    transform: scaleX(-1);
+}
+
+.shot{
+    position: absolute;
+    background-color: #8c9440;
+}
+
+.shotEffect{
+    position: absolute;
+    background-image: url('/img/shot_effect.png');
+}
+
+.enemyBlock{
+    position: absolute;
+    background-color: #c5c8c6;
+}
+
+.explosion{
+    position: absolute;
+    background-image: url('/img/explosion.png');
+}
